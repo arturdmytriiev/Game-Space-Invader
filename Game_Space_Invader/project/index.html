@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            margin:0;
+            background-color:black;
+        }
+        
+        #scoreboard {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 15px;
+            color: white;
+        }
+    </style>
+<head>
+    <div id = "startScreen"
+  style = "
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    background: url('./space/startScreenBackground.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    " >
+       <div id = "startButton" style = "cursor: pointer;">
+         <img src = "./space/button.png" alt="StartButtton"
+         style = "position: absolute;
+         bottom: 40%;
+         left:40%;
+         width: 150px;">
+            <div style = "position:absolute; bottom: 42%; left: 43.8%; width: 120px;">
+              <span style = "color:white;">Start</span>
+           </div>
+        <img src = "./space/button.png" alt="InstructionButton"
+        style = "position: absolute;
+        bottom: 30%;
+        left:40%;
+        width: 150px;">
+        </div>
+    <div  id = "instrButton" style = "cursor: pointer;">
+         <div style = "position:absolute; bottom: 32%; left: 42.5%; width: 120px;">
+            <span style = "color:white;">Instruction</span>
+         </div>
+        <div style = "color:azure; position: absolute; bottom: 50%; left: 38%;">
+            <h1>Space Invader</h1>
+        </div>
+    </div>
+    <div id = "leadButton" style = "cursor: pointer;">
+        <img src = "./space/button.png" alt="StartButtton"
+        style = "position: absolute; 
+        bottom: 20%;
+        left:30%;
+        width: 150px;">
+           <div style = "position:absolute; bottom: 22%; left: 33.5%; width: 120px;">
+             <span style = "color:white;">Setting</span>
+          </div>
+    </div>
+    <div id = "pravButton" style = "cursor: pointer;">
+        <img src = "./space/button.png" alt="StartButtton"
+        style = "position: absolute;
+        bottom: 20%;
+        left:50%;
+        width: 150px;">
+           <div style = "position:absolute; bottom: 22%; left: 53%; width: 120px;">
+             <span style = "color:white;">Pravidla</span>
+          </div>
+    </div>
+    <div id = "leadButton" style = "cursor: pointer;">
+      <img src = "./space/button.png" alt="StartButtton"
+      style = "position: absolute;
+      bottom: 10%;
+      left:40%;
+      width: 150px;">
+         <div style = "position:absolute; bottom: 12%; left: 42%; width: 120px;">
+           <span style = "color:white;">LeaderBoard</span>
+        </div>
+  </div>
+  </div>
+   
+    <canvas></canvas>
+    <div id="scoreboard">Score: 0</div>
+    <img class="sound-button" id="bgMusicButton" src="space/35.png" onclick="toggleBackgroundMusic()">
+    <img class="sound-button" id="shootSoundsButton" src="space/35.1.png" onclick="toggleShootSounds()">
+    
+    <audio id="backgroundMusic" src="audio/a31df44c3944ea6.mp3" loop></audio>
+    <audio id="lodShootSound" src="audio/metkiy-kosmicheskiy-vyistrel.mp3"></audio>
+    <audio id="invaderShootSound" src="audio/plasma_gun_06.mp3"></audio>
+    
+  
+    <script src = "mvc-instr.js"></script>
+    <script src = "music1.js"></script>
+    <script src = "observer.js"></script>
+    <script src = "enemyProjectiles.js"></script>
+    <script src = "enemy.js"></script>
+    <script src = "grid.js"></script>
+    <script src = "Projectile.js"></script>
+    <script src="Lod.js"></script>
+    <script src = "strongGrid.js"></script>
+    <script src = "stronginvader.js"></script>
+    <script src = "jsindex.js"></script>
+
+  
+</head>
+<body>
+
+</body>
+</html>
